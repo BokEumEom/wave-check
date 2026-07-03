@@ -1,0 +1,6 @@
+{
+  "name": "파도체크 (Wave Check)",
+  "description": "실시간 대한민국 주요 해변 파도 정보 및 서핑 최적 예보 앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

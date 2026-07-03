@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-sans: "Be Vietnam Pro", "Inter", sans-serif;
+  
+  --color-primary: #0058bc;
+  --color-primary-container: #0070eb;
+  --color-secondary: #54606b;
+  --color-secondary-container: #d8e4f2;
+  --color-on-secondary-container: #5a6671;
+  --color-surface-bright: #fafaf5;
+  --color-surface-container-low: #f4f4ef;
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.dark .glass-panel {
+  background: rgba(24, 24, 27, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Hide scrollbar utilities */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Ocean/Wave styling utilities */
+.ocean-gradient {
+  background: linear-gradient(180deg, #0070eb 0%, #0058bc 100%);
+}
+
+.ocean-glow {
+  box-shadow: 0 8px 16px rgba(0, 88, 188, 0.15);
+}
+
+/* Spring scale micro-interactions */
+.active-scale:active {
+  transform: scale(0.96);
+}
+
+/* General Layout Optimization for Custom Viewports */
+body {
+  background-color: #fafaf5;
+}
+
+.dark body {
+  background-color: #09090b;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
